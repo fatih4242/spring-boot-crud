@@ -17,6 +17,7 @@
 					<th>Employee First Name</th>
 					<th>Employee First Last Name</th>
 					<th>Employee email</th>
+					<th>Actions</th>
 					
 				</tr>
 			
@@ -26,7 +27,8 @@
 					<td th:text="${employee.firstName}"></td>
 					<td th:text="${employee.lastName}"></td>
 					<td th:text="${employee.email}"></td>
-					
+					<td><a th:href="@{/showFormForUpdate/{id}(id=${employee.id})}">Update</a></td>
+					<td><a th:href="@{/goForDelete/{id}(id=${employee.id})}">Delete</a></td>
 				</tr>
 			
 			
