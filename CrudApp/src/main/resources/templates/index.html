@@ -1,11 +1,15 @@
 <!DOCTYPE html>
-<html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
 <head>
 <meta charset="UTF-8">
 <title>Employee Management System</title>
 </head>
 <body>
+
+
+
 	<div align="center">
+		<a th:href="@{/showNewEmployeeForm}">Add Employee</a>
 		<h1>Employees List</h1>
 		<table border="1">
 			<thead>
